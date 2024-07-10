@@ -1,5 +1,7 @@
-<script setup>
-import NavItem from '../NavItem/NavItem.vue'
+<script setup lang="ts">
+// import NavItem from '../NavItem/NavItem.vue'
+// import NavItem from '@components/layouts/sidebar/nav-item.vue'
+// import NavCollapse from '@components/layouts/sidebar/nav-collapse.vue'
 
 const props = defineProps({ item: Object, level: Number })
 </script>
@@ -13,27 +15,27 @@ const props = defineProps({ item: Object, level: Number })
         <!---Dropdown  -->
         <!-- ---------------------------------------------- -->
         <template #activator="{ props }">
-            <v-list-item v-bind="props" :value="item.title" rounded class="mb-1" color="primary">
+            <v-list-item v-bind="props" :value="item?.title" rounded class="mb-1" color="primary">
                 <!---Icon  -->
                 <template #prepend>
-                    <component :is="item.icon" class="iconClass" :level="level" />
+                    <component :is="item?.icon" class="iconClass" :level="level" />
                 </template>
                 <!---Title  -->
                 <v-list-item-title class="mr-auto">
-                    {{ item.title }}
+                    {{ item?.title }}
                 </v-list-item-title>
                 <!---If Caption -->
-                <v-list-item-subtitle v-if="item.subCaption" class="text-caption mt-n1 hide-menu">
-                    {{ item.subCaption }}
+                <v-list-item-subtitle v-if="item?.subCaption" class="text-caption mt-n1 hide-menu">
+                    {{ item?.subCaption }}
                 </v-list-item-subtitle>
             </v-list-item>
         </template>
         <!-- ---------------------------------------------- -->
         <!---Sub Item -->
         <!-- ---------------------------------------------- -->
-        <template v-for="(subitem, i) in item.children" :key="i">
-            <NavCollapse v-if="subitem.children" :item="subitem" :level="props.level + 1" />
-            <NavItem v-else :item="subitem" :level="props.level + 1" />
+        <template v-for="(subitem, i) in item?.children" :key="i">
+            <LayoutsSidebarNavCollapse v-if="subitem.children" :item="subitem" :level="(props?.level ?? 0) + 1" />
+            <LayoutsSidebarNavItem v-else :item="subitem" :level="(props?.level ?? 0) + 1" />
         </template>
     </v-list-group>
 

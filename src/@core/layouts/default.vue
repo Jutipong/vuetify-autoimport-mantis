@@ -5,7 +5,7 @@ import LoaderWrapper from './LoaderWrapper.vue'
 <template>
     <v-locale-provider>
         <v-app :class="[]">
-            <LayoutsVerticalSidebarVerticalSidebar />
+            <LayoutsSidebar />
             <LayoutsHeader />
 
             <v-main class="page-wrapper">
