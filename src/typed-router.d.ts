@@ -25,5 +25,7 @@ declare module 'vue-router/auto-routes' {
     '/sample-page': RouteRecordInfo<'/sample-page', '/sample-page', Record<never, never>, Record<never, never>>,
     '/shadow': RouteRecordInfo<'/shadow', '/shadow', Record<never, never>, Record<never, never>>,
     '/typography': RouteRecordInfo<'/typography', '/typography', Record<never, never>, Record<never, never>>,
+    '/user/': RouteRecordInfo<'/user/', '/user', Record<never, never>, Record<never, never>>,
+    '/user/[id]': RouteRecordInfo<'/user/[id]', '/user/:id', { id: ParamValue<true> }, { id: ParamValue<false> }>,
   }
 }

@@ -23,7 +23,7 @@ export default defineConfig({
                     zod: ['z'],
                 },
             ],
-            dirs: ['./src/utils/**', './src/stores/**'],
+            dirs: ['./src/**'],
             dts: './src/auto-imports.d.ts',
         }),
         Components({
