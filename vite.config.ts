@@ -7,7 +7,7 @@ import Layouts from 'vite-plugin-vue-layouts'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import { typescriptConfig, vueConfig } from './src/constants/vite-config'
-
+import UnoCSS from 'unocss/vite'
 export default defineConfig({
   plugins: [
     AutoImport({
@@ -39,11 +39,13 @@ export default defineConfig({
       routesFolder: 'src/pages',
       dts: 'src/typed-router.d.ts',
     }),
-    vue()
+    vue(),
+    UnoCSS(),
   ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
     },
     extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
   },
