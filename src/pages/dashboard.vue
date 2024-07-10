@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import WidgetFive from './components/WidgetFive.vue'
-import UniqueVisitor from './components/UniqueVisitor.vue'
-import IncomeOverview from './components/IncomeOverview.vue'
-import RecentOrder from './components/RecentOrder.vue'
-import AnalyticsReport from './components/AnalyticsReport.vue'
-import HelpSupport from './components/HelpSupport.vue'
-import TransactionHistory from './components/TransactionHistory.vue'
-import SalesReport from './components/SalesReport.vue'
+// import WidgetFive from './components/WidgetFive.vue'
+// import UniqueVisitor from './components/UniqueVisitor.vue'
+// import IncomeOverview from './components/IncomeOverview.vue'
+// import RecentOrder from './components/RecentOrder.vue'
+// import AnalyticsReport from './components/AnalyticsReport.vue'
+// import HelpSupport from './components/HelpSupport.vue'
+// import TransactionHistory from './components/TransactionHistory.vue'
+// import SalesReport from './components/SalesReport.vue'
 </script>
 
 <template>
@@ -20,14 +20,15 @@ import SalesReport from './components/SalesReport.vue'
         <!-- Unique visitor -->
         <!-- -------------------------------------------------------------------- -->
         <v-col cols="12" md="8">
-            <UniqueVisitor />
+            <!-- <UniqueVisitor /> -->
+            <DashboardUniqueVisitor />
         </v-col>
 
         <!-- -------------------------------------------------------------------- -->
         <!-- Income overview -->
         <!-- -------------------------------------------------------------------- -->
         <v-col cols="12" md="4">
-            <IncomeOverview />
+            <DashboardIncomeOverview />
         </v-col>
     </v-row>
     <v-row class="mb-0">
@@ -35,14 +36,14 @@ import SalesReport from './components/SalesReport.vue'
         <!-- Recent order -->
         <!-- -------------------------------------------------------------------- -->
         <v-col cols="12" md="8">
-            <RecentOrder />
+            <DashboardRecentOrder />
         </v-col>
 
         <!-- -------------------------------------------------------------------- -->
         <!-- Analytics Report -->
         <!-- -------------------------------------------------------------------- -->
         <v-col cols="12" md="4">
-            <AnalyticsReport />
+            <DashboardAnalyticsReport />
         </v-col>
     </v-row>
     <v-row>
@@ -50,7 +51,7 @@ import SalesReport from './components/SalesReport.vue'
         <!-- Sales Report -->
         <!-- -------------------------------------------------------------------- -->
         <v-col cols="12" md="7">
-            <SalesReport />
+            <DashboardSalesReport />
         </v-col>
 
         <v-col cols="12" md="5">
@@ -59,14 +60,14 @@ import SalesReport from './components/SalesReport.vue'
                 <!-- Transaction History -->
                 <!-- -------------------------------------------------------------------- -->
                 <v-col cols="12">
-                    <TransactionHistory />
+                    <DashboardTransactionHistory />
                 </v-col>
 
                 <!-- -------------------------------------------------------------------- -->
                 <!-- Help support -->
                 <!-- -------------------------------------------------------------------- -->
                 <v-col cols="12">
-                    <HelpSupport />
+                    <DashboardHelpSupport />
                 </v-col>
             </v-row>
         </v-col>

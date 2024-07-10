@@ -7,8 +7,14 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    Header: typeof import('./@core/layouts/components/header.vue')['default']
-    Navigation: typeof import('./@core/layouts/components/navigation.vue')['default']
+    DashboardAnalyticsReport: typeof import('./components/dashboard/AnalyticsReport.vue')['default']
+    DashboardHelpSupport: typeof import('./components/dashboard/HelpSupport.vue')['default']
+    DashboardIncomeOverview: typeof import('./components/dashboard/IncomeOverview.vue')['default']
+    DashboardRecentOrder: typeof import('./components/dashboard/RecentOrder.vue')['default']
+    DashboardSalesReport: typeof import('./components/dashboard/SalesReport.vue')['default']
+    DashboardTransactionHistory: typeof import('./components/dashboard/TransactionHistory.vue')['default']
+    DashboardUniqueVisitor: typeof import('./components/dashboard/UniqueVisitor.vue')['default']
+    DashboardWidgetFive: typeof import('./components/dashboard/WidgetFive.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SharedBaseBreadcrumb: typeof import('./components/shared/BaseBreadcrumb.vue')['default']
