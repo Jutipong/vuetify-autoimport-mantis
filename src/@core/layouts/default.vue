@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import LoaderWrapper from './LoaderWrapper.vue'
-import VerticalSidebarVue from './vertical-sidebar/VerticalSidebar.vue'
-import VerticalHeaderVue from './vertical-header/VerticalHeader.vue'
-import FooterPanel from './footer/FooterPanel.vue'
+import VerticalSidebarVue from './dashboard/vertical-sidebar/VerticalSidebar.vue'
+import VerticalHeaderVue from './dashboard/vertical-header/VerticalHeader.vue'
+import FooterPanel from './dashboard/footer/FooterPanel.vue'
 </script>
 
 <template>

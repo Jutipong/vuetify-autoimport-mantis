@@ -4,6 +4,7 @@ const props = defineProps({ item: Object })
 
 <template>
     <v-list-subheader color="lightText" class="smallCap text-subtitle-2">
-        {{ $t(props.item.header) }}
+        <!-- {{ $t(props.item.header) }} -->
+        {{ props.item.header }}
     </v-list-subheader>
 </template>

@@ -17,7 +17,7 @@ export default defineConfig({
                 {
                     typescript: typescriptConfig,
                     vue: vueConfig,
-                    pinia: ['defineStore', 'acceptHMRUpdate'],
+                    pinia: ['defineStore', 'acceptHMRUpdate', 'storeToRefs'],
                     lodash: [['default', '_']],
                     vuetify: ['useTheme', 'useDisplay'],
                     zod: ['z'],
@@ -27,14 +27,14 @@ export default defineConfig({
             dts: './src/auto-imports.d.ts',
         }),
         Components({
-            dirs: ['src/components', 'src/@core/layouts/components'],
+            dirs: ['src/components'],
             dts: 'src/components.d.ts',
             deep: true,
             directoryAsNamespace: true,
         }),
         Layouts({
-            layoutsDirs: 'src/@core/layouts/dashboard',
-            defaultLayout: 'DashboardLayout',
+            layoutsDirs: 'src/@core/layouts',
+            defaultLayout: 'default',
         }),
         VueRouter({
             routesFolder: 'src/pages',

@@ -4,9 +4,9 @@ import { useCustomizerStore } from '../../../../stores/customizer'
 import Logo from '../logo/LogoDark.vue'
 import sidebarItems from './sidebarItem'
 
-// import NavGroup from './NavGroup/NavGroup.vue';
-// import NavItem from './NavItem/NavItem.vue';
-// import NavCollapse from './NavCollapse/NavCollapse.vue';
+import NavGroup from './NavGroup/NavGroup.vue'
+import NavItem from './NavItem/NavItem.vue'
+import NavCollapse from './NavCollapse/NavCollapse.vue'
 
 import ExtraBox from './extrabox/ExtraBox.vue'
 
@@ -28,7 +28,7 @@ const sidebarMenu = shallowRef(sidebarItems)
         <perfect-scrollbar class="scrollnavbar">
             <v-list aria-busy="true" aria-label="menu list">
                 <!---Menu Loop -->
-                <template v-for="(item, _) in sidebarMenu" :key="i">
+                <template v-for="(item, i) in sidebarMenu" :key="i">
                     <!---Item Sub Header -->
                     <NavGroup v-if="item.header" :key="item.title" :item="item" />
                     <!---Item Divider -->
