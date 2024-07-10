@@ -11,39 +11,12 @@ import {
     QuestionOutlined,
 } from '@ant-design/icons-vue'
 
-export interface menu {
-    header?: string
-    title?: string
-    icon?: object
-    to?: string
-    divider?: boolean
-    chip?: string
-    chipColor?: string
-    chipVariant?: string
-    chipIcon?: string
-    children?: menu[]
-    disabled?: boolean
-    type?: string
-    subCaption?: string
-}
-
-const sidebarItem: menu[] = [
+const sidebarItem: Menu[] = [
     { header: 'Navigation' },
     {
         title: 'Dashboard',
         icon: DashboardOutlined,
         to: '/dashboard',
-    },
-    { header: 'Authentication' },
-    {
-        title: 'Login',
-        icon: LoginOutlined,
-        to: '/auth/login',
-    },
-    {
-        title: 'Register',
-        icon: ProfileOutlined,
-        to: '/auth/register',
     },
     { header: 'Utilities' },
     {
@@ -71,15 +44,6 @@ const sidebarItem: menu[] = [
         title: 'Sample Page',
         icon: ChromeOutlined,
         to: '/sample-page',
-    },
-    {
-        title: 'Documentation',
-        icon: QuestionOutlined,
-        to: 'https://codedthemes.gitbook.io/mantis-vuetify/',
-        type: 'external',
-        chip: 'gitbook',
-        chipColor: 'secondary',
-        chipVariant: 'flat',
     },
 ]
 

@@ -1,5 +1,12 @@
 <script setup lang="ts">
-const props = defineProps({ item: Object, level: Number })
+import type { PropType } from 'vue'
+
+const props = defineProps({  
+    item: {
+        type: Object as PropType<Menu>,
+        required: false,
+    }, 
+    level: Number })
 </script>
 
 <template>
@@ -30,9 +37,10 @@ const props = defineProps({ item: Object, level: Number })
                 :color="item.chipColor"
                 class="sidebarchip hide-menu"
                 size="small"
-                :variant="item.chipVariant"
                 :prepend-icon="item.chipIcon"
             >
+                <!-- :variant="item.chipVariant" -->
+
                 {{ item.chip }}
             </v-chip>
         </template>
