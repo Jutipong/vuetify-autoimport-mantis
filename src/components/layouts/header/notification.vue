@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-// icons
 import { BellOutlined, CheckCircleOutlined, GiftOutlined, MessageOutlined, SettingOutlined } from '@ant-design/icons-vue'
 
 const isActive = ref(true)

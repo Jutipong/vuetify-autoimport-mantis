@@ -13,8 +13,6 @@ import {
     UserOutlined,
     WalletOutlined,
 } from '@ant-design/icons-vue'
-// import { useAuthStore } from '../../../stores/authxxxxx';
-// import { useAuthStore } from '../../../stores/authxxxxx';
 
 const tab = ref(null)
 // const authStore = useAuthStore();
