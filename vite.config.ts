@@ -52,4 +52,16 @@ export default defineConfig({
         },
         extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
     },
+    css: {
+        preprocessorOptions: {
+            scss: {},
+        },
+    },
+    build: {
+        chunkSizeWarningLimit: 1024 * 1024, // Set the limit to 1 MB
+    },
+    optimizeDeps: {
+        exclude: ['vuetify'],
+        entries: ['./src/**/*.vue'],
+    },
 })

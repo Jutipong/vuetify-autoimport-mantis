@@ -4,20 +4,18 @@
 // import vuetify from './plugins/vuetify';
 // import router from '@/@core/router'
 
-
 // const app = createApp(App);
 // app.use(router as any);
 // app.use(vuetify).mount('#app');
 
-
 import { createApp } from 'vue'
 // import '@/assets/css/styles/index.scss'
 // import '@/scss/style.scss';
-import '../src/scss/style.scss'
+import '@/scss/style.scss'
 
 import type { PluginOptions } from 'vue-toastification'
 import Toast from 'vue-toastification'
-import PerfectScrollbar from 'vue3-perfect-scrollbar';
+import PerfectScrollbar from 'vue3-perfect-scrollbar'
 import App from './App.vue'
 // import vuetify from '@/@core/plugins/vuetify'
 import router from '@/@core/router'
@@ -32,7 +30,7 @@ document.title = import.meta.env.VITE_APP_TITLE
 const app = createApp(App)
 app.use(vuetify)
 app.use(router)
-app.use(PerfectScrollbar);
+app.use(PerfectScrollbar)
 app.use(piniaConfig)
 app.use(Toast, {
     transition: 'Vue-Toastification__bounce',
