@@ -55,12 +55,12 @@ const customizer = useCustomizerStore()
         <!-- ---------------------------------------------- -->
         <!-- Github -->
         <!-- ---------------------------------------------- -->
-        <v-btn
+        <!-- <v-btn
             icon class="text-secondary hidden-sm-and-down d-flex" color="darkText" rounded="sm" variant="text"
             href="https://github.com/codedthemes/mantis-free-vuetify-vuejs-admin-template" target="_blank"
         >
             <GithubOutlined :style="{ fontSize: '16px' }" />
-        </v-btn>
+        </v-btn> -->
 
         <!-- ---------------------------------------------- -->
         <!-- Notification -->
