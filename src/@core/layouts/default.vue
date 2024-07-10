@@ -1,19 +1,12 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
 import LoaderWrapper from './LoaderWrapper.vue'
-// import VerticalSidebarVue from './dashboard/vertical-sidebar/VerticalSidebar.vue'
-// import VerticalHeaderVue from './dashboard/vertical-header/VerticalHeader.vue'
-// import FooterPanel from './dashboard/footer/FooterPanel.vue'
 </script>
 
 <template>
     <v-locale-provider>
         <v-app :class="[]">
-            <!-- <VerticalSidebarVue />
-            <VerticalHeaderVue /> -->
-
             <LayoutsVerticalSidebarVerticalSidebar />
-            <LayoutsVerticalHeaderVerticalHeader />
+            <LayoutsVerticalHeader />
 
             <v-main class="page-wrapper">
                 <v-container>

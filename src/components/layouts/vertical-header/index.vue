@@ -2,9 +2,9 @@
 import { GithubOutlined, MenuFoldOutlined, SearchOutlined } from '@ant-design/icons-vue'
 
 // dropdown imports
-import NotificationDD from './NotificationDD.vue'
+// import NotificationDD from './notification.vue'
 // import Searchbar from './SearchBarPanel.vue';
-import ProfileDD from './ProfileDD.vue'
+// import ProfileDD from './profile.vue'
 
 const customizer = useCustomizerStore()
 </script>
@@ -70,7 +70,7 @@ const customizer = useCustomizerStore()
         <!-- ---------------------------------------------- -->
         <!-- Notification -->
         <!-- ---------------------------------------------- -->
-        <NotificationDD />
+        <LayoutsVerticalHeaderNotification />
 
         <!-- ---------------------------------------------- -->
         <!-- User Profile -->
@@ -89,7 +89,7 @@ const customizer = useCustomizerStore()
                 </v-btn>
             </template>
             <v-sheet rounded="md" width="290">
-                <ProfileDD />
+                <LayoutsVerticalHeaderProfile />
             </v-sheet>
         </v-menu>
     </v-app-bar>
