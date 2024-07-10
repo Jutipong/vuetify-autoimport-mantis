@@ -34,11 +34,6 @@ const sidebarItem: Menu[] = [
         icon: BarcodeOutlined,
         to: '/shadow',
     },
-    {
-        title: 'Ant Icons',
-        icon: CrownOutlined,
-        to: '/icon/ant',
-    },
     { header: 'Support' },
     {
         title: 'Sample Page',
