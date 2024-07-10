@@ -23,7 +23,7 @@ export default defineConfig({
                     zod: ['z'],
                 },
             ],
-            dirs: ['./src/**'],
+            dirs: ['./src/utils/**', './src/stores/**'],
             dts: './src/auto-imports.d.ts',
         }),
         Components({
@@ -46,9 +46,12 @@ export default defineConfig({
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url)),
+            '@core': fileURLToPath(new URL('./src/@core', import.meta.url)),
+            '@assets': fileURLToPath(new URL('./assets', import.meta.url)),
             '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
             '@images': fileURLToPath(new URL('./src/assets/images', import.meta.url)),
-            '@types': fileURLToPath(new URL('./src/assets/types', import.meta.url)),
+            '@utils': fileURLToPath(new URL('./src/utils', import.meta.url)),
+            '@types': fileURLToPath(new URL('./src/types', import.meta.url)),
         },
         extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
     },

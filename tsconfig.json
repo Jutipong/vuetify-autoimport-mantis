@@ -14,6 +14,9 @@
             "@/*": [
                 "src/*",
             ],
+            "@assets/*": [
+                "src/assets/*"
+            ],
             "@images/*": [
                 "src/assets/images/*"
             ],
@@ -22,6 +25,12 @@
             ],
             "@types/*": [
                 "src/types/*"
+            ],
+            "@core/*": [
+                "src/@core/*"
+            ],
+            "@utils/*": [
+                "src/utils/*"
             ],
         },
         "resolveJsonModule": true,
