@@ -2,7 +2,7 @@ import { createVuetify } from 'vuetify';
 import '@mdi/font/css/materialdesignicons.css';
 import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
-import { DefaultTheme } from '@/theme/LightTheme';
+import { DefaultTheme } from '../theme/LightTheme';
 
 export default createVuetify({
   components,
