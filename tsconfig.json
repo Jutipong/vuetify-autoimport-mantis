@@ -12,8 +12,14 @@
         "moduleResolution": "Bundler", // "Node",
         "paths": {
             "@/*": [
-                "src/*"
-            ]
+                "src/*",
+            ],
+            "@images/*": [
+                "src/assets/images/*"
+            ],
+            "@components/*": [
+                "src/components/*"
+            ],
         },
         "resolveJsonModule": true,
         "types": [

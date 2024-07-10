@@ -67,7 +67,7 @@ declare global {
   const requiredNumber: typeof import('./utils/zodValidate')['requiredNumber']
   const requiredString: typeof import('./utils/zodValidate')['requiredString']
   const router: typeof import('./@core/router')['default']
-  const sidebarItem: typeof import('./layouts/dashboard/vertical-sidebar/sidebarItem')['default']
+  const sidebarItem: typeof import('./@core/layouts/dashboard/vertical-sidebar/sidebarItem')['default']
   const timeCofig: typeof import('./utils/dateTime')['timeCofig']
   const toRef: typeof import('vue')['toRef']
   const toRefs: typeof import('vue')['toRefs']
