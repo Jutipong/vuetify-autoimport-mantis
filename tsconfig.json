@@ -1,11 +1,44 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
+    "compilerOptions": {
+        "target": "ESNext",
+        "jsx": "preserve",
+        "lib": [
+            "ESNext",
+            "DOM"
+        ],
+        "useDefineForClassFields": true,
+        "baseUrl": ".",
+        "module": "ESNext",
+        "moduleResolution": "Bundler", // "Node",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        },
+        "resolveJsonModule": true,
+        "types": [
+            "vite/client",
+            "vite-plugin-vue-layouts/client",
+            "unplugin-vue-router/client"
+        ],
+        "strict": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "skipLibCheck": true
     },
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ]
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ],
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }

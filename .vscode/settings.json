@@ -54,7 +54,7 @@
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
     "[json]": {
-        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[javascript]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -62,22 +62,22 @@
     "vue.splitEditors.icon": true,
     "editor.minimap.enabled": false,
     "typescript.preferences.autoImportFileExcludePatterns": [
-        "vue-router"
+        "vue-router/auto$"
     ],
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/Thumbs.db": true,
-        "**/node_modules": true,
-        ".browserslistrc": false,
-        ".gitignore": false,
-        "tsconfig.node.json": false,
-        "src/vite-env.d.ts": false,
-        "yarn.lock": false
-    },
+    // "files.exclude": {
+    //     "**/.git": true,
+    //     "**/.svn": true,
+    //     "**/.hg": true,
+    //     "**/CVS": true,
+    //     "**/.DS_Store": true,
+    //     "**/Thumbs.db": true,
+    //     "**/node_modules": true,
+    //     ".browserslistrc": false,
+    //     ".gitignore": false,
+    //     "tsconfig.node.json": false,
+    //     "src/vite-env.d.ts": false,
+    //     "yarn.lock": false
+    // },
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Simple Dark",
     "editor.fontSize": 15,
