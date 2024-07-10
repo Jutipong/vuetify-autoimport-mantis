@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { shallowRef } from 'vue'
-import Logo from '../logo/LogoDark.vue'
 import sidebarItems from './sidebarItem'
 
 const customizer = useCustomizerStore()
@@ -13,7 +11,7 @@ const sidebarMenu = shallowRef(sidebarItems)
         class="leftSidebar" :rail="customizer.mini_sidebar" expand-on-hover
     >
         <div class="pa-5">
-            <Logo />
+            <LayoutsLogo />
         </div>
         <!-- ---------------------------------------------- -->
         <!---Navigation -->

@@ -19,7 +19,7 @@ declare module 'vue' {
     LayoutsHeader: typeof import('./components/layouts/header/index.vue')['default']
     LayoutsHeaderNotification: typeof import('./components/layouts/header/notification.vue')['default']
     LayoutsHeaderProfile: typeof import('./components/layouts/header/profile.vue')['default']
-    LayoutsLogoLogoDark: typeof import('./components/layouts/logo/LogoDark.vue')['default']
+    LayoutsLogo: typeof import('./components/layouts/logo/index.vue')['default']
     LayoutsSidebar: typeof import('./components/layouts/sidebar/index.vue')['default']
     LayoutsSidebarNavCollapse: typeof import('./components/layouts/sidebar/nav-collapse.vue')['default']
     LayoutsSidebarNavGroup: typeof import('./components/layouts/sidebar/nav-group.vue')['default']

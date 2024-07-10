@@ -1,8 +1,4 @@
 <script setup lang="ts">
-// import NavItem from '../NavItem/NavItem.vue'
-// import NavItem from '@components/layouts/sidebar/nav-item.vue'
-// import NavCollapse from '@components/layouts/sidebar/nav-collapse.vue'
-
 const props = defineProps({ item: Object, level: Number })
 </script>
 
