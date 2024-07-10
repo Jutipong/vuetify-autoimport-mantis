@@ -7,6 +7,23 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    DashboardAnalyticsReport: typeof import('./components/dashboard/AnalyticsReport.vue')['default']
+    DashboardComponentsAnalyticsReport: typeof import('./components/dashboard/components/AnalyticsReport.vue')['default']
+    DashboardComponentsHelpSupport: typeof import('./components/dashboard/components/HelpSupport.vue')['default']
+    DashboardComponentsIncomeOverview: typeof import('./components/dashboard/components/IncomeOverview.vue')['default']
+    DashboardComponentsRecentOrder: typeof import('./components/dashboard/components/RecentOrder.vue')['default']
+    DashboardComponentsSalesReport: typeof import('./components/dashboard/components/SalesReport.vue')['default']
+    DashboardComponentsTransactionHistory: typeof import('./components/dashboard/components/TransactionHistory.vue')['default']
+    DashboardComponentsUniqueVisitor: typeof import('./components/dashboard/components/UniqueVisitor.vue')['default']
+    DashboardComponentsWidgetFive: typeof import('./components/dashboard/components/WidgetFive.vue')['default']
+    DashboardDefaultDashboard: typeof import('./components/dashboard/DefaultDashboard.vue')['default']
+    DashboardHelpSupport: typeof import('./components/dashboard/HelpSupport.vue')['default']
+    DashboardIncomeOverview: typeof import('./components/dashboard/IncomeOverview.vue')['default']
+    DashboardRecentOrder: typeof import('./components/dashboard/RecentOrder.vue')['default']
+    DashboardSalesReport: typeof import('./components/dashboard/SalesReport.vue')['default']
+    DashboardTransactionHistory: typeof import('./components/dashboard/TransactionHistory.vue')['default']
+    DashboardUniqueVisitor: typeof import('./components/dashboard/UniqueVisitor.vue')['default']
+    DashboardWidgetFive: typeof import('./components/dashboard/WidgetFive.vue')['default']
     LayoutsFooterFooterPanel: typeof import('./components/layouts/footer/FooterPanel.vue')['default']
     LayoutsHeader: typeof import('./components/layouts/header/index.vue')['default']
     LayoutsHeaderNotification: typeof import('./components/layouts/header/notification.vue')['default']
