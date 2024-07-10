@@ -1,8 +1,5 @@
 <script setup lang="ts">
 import { GithubOutlined, MenuFoldOutlined, SearchOutlined } from '@ant-design/icons-vue'
-// import { useCustomizerStore } from '../../../stores/customizer'
-import { useCustomizerStore } from '../../../../stores/customizer'
-// icons
 
 // dropdown imports
 import NotificationDD from './NotificationDD.vue'

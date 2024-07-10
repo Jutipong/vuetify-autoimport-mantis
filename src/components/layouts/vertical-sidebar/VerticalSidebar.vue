@@ -1,12 +1,7 @@
 <script setup lang="ts">
 import { shallowRef } from 'vue'
-import { useCustomizerStore } from '../../../../stores/customizer'
 import Logo from '../logo/LogoDark.vue'
 import sidebarItems from './sidebarItem'
-
-import NavGroup from './NavGroup/NavGroup.vue'
-import NavItem from './NavItem/NavItem.vue'
-import NavCollapse from './NavCollapse/NavCollapse.vue'
 
 import ExtraBox from './extrabox/ExtraBox.vue'
 
@@ -30,13 +25,13 @@ const sidebarMenu = shallowRef(sidebarItems)
                 <!---Menu Loop -->
                 <template v-for="(item, i) in sidebarMenu" :key="i">
                     <!---Item Sub Header -->
-                    <NavGroup v-if="item.header" :key="item.title" :item="item" />
+                    <LayoutsVerticalSidebarNavGroupNavGroup v-if="item.header" :key="item.title" :item="item" />
                     <!---Item Divider -->
                     <v-divider v-else-if="item.divider" class="my-3" />
                     <!---If Has Child -->
-                    <NavCollapse v-else-if="item.children" class="leftPadding" :item="item" :level="0" />
+                    <LayoutsVerticalSidebarNavCollapseNavCollapse v-else-if="item.children" class="leftPadding" :item="item" :level="0" />
                     <!---Single Item -->
-                    <NavItem v-else :item="item" />
+                    <LayoutsVerticalSidebarNavItemNavItem v-else :item="item" />
                     <!---End Single Item -->
                 </template>
             </v-list>

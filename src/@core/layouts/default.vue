@@ -1,16 +1,19 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import LoaderWrapper from './LoaderWrapper.vue'
-import VerticalSidebarVue from './dashboard/vertical-sidebar/VerticalSidebar.vue'
-import VerticalHeaderVue from './dashboard/vertical-header/VerticalHeader.vue'
-import FooterPanel from './dashboard/footer/FooterPanel.vue'
+// import VerticalSidebarVue from './dashboard/vertical-sidebar/VerticalSidebar.vue'
+// import VerticalHeaderVue from './dashboard/vertical-header/VerticalHeader.vue'
+// import FooterPanel from './dashboard/footer/FooterPanel.vue'
 </script>
 
 <template>
     <v-locale-provider>
         <v-app :class="[]">
-            <VerticalSidebarVue />
-            <VerticalHeaderVue />
+            <!-- <VerticalSidebarVue />
+            <VerticalHeaderVue /> -->
+
+            <LayoutsVerticalSidebarVerticalSidebar />
+            <LayoutsVerticalHeaderVerticalHeader />
 
             <v-main class="page-wrapper">
                 <v-container>
@@ -23,7 +26,8 @@ import FooterPanel from './dashboard/footer/FooterPanel.vue'
                 </v-container>
                 <v-container class="pt-0">
                     <div>
-                        <FooterPanel />
+                        <!-- <FooterPanel /> -->
+                        <LayoutsFooterFooterPanel />
                     </div>
                 </v-container>
             </v-main>
