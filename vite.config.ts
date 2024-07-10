@@ -48,7 +48,7 @@ export default defineConfig({
             '@': fileURLToPath(new URL('./src', import.meta.url)),
             '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
             '@images': fileURLToPath(new URL('./src/assets/images', import.meta.url)),
-            // '@images': path.resolve(__dirname, './src/assets/images'),
+            '@types': fileURLToPath(new URL('./src/assets/types', import.meta.url)),
         },
         extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
     },
