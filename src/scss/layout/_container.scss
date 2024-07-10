@@ -1,6 +1,7 @@
 html {
   overflow-y: auto;
 }
+
 .horizontalLayout {
   .page-wrapper {
     .v-container {
@@ -8,22 +9,27 @@ html {
     }
   }
 }
+
 @media (min-width: 1540px) {
   .v-container:not(.v-container--fluid) {
     max-width: 1500px;
   }
 }
+
 .spacer {
   padding: 100px 0;
+
   @media (max-width: 1264px) {
     padding: 72px 0;
   }
 }
+
 @media (max-width: 800px) {
   .spacer {
     padding: 40px 0;
   }
 }
+
 .page-wrapper {
   background: rgb(var(--v-theme-containerBg));
 }
@@ -31,24 +37,31 @@ html {
 .cursor-pointer {
   cursor: pointer;
 }
+
 .page-wrapper {
   .v-container {
+    padding: 15px;
+
     &:first-child {
       min-height: calc(100vh - 139px);
     }
-    padding: 15px;
+
+    // padding: 15px;
     @media (max-width: 1550px) {
       max-width: 100%;
     }
+
     @media (min-width: 768px) {
       padding-inline: 40px;
     }
   }
 }
+
 .maxWidth {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 $sizes: (
   'display-1': 44px,
   'display-2': 40px,
@@ -82,12 +95,15 @@ $sizes: (
     transition: all 0.2s ease-in-out;
   }
 }
+
 .fixed-width {
   max-width: 1300px;
 }
+
 .h-100 {
   height: 100%;
 }
+
 .w-100 {
   width: 100%;
 }
@@ -95,6 +111,7 @@ $sizes: (
 .h-100vh {
   height: 100vh;
 }
+
 .gap-2 {
   gap: 8px;
 }
@@ -116,6 +133,7 @@ $sizes: (
   border: 1px solid #1677ff;
   background-color: #1677ff;
 }
+
 .themeLightTheme1,
 .themeDark1 {
   border: 1px solid #3366ff;
@@ -127,6 +145,7 @@ $sizes: (
   border: 1px solid #7265e6;
   background-color: #7265e6;
 }
+
 .themeLightTheme3,
 .themeDark3 {
   border: 1px solid #068e44;
@@ -167,6 +186,7 @@ $sizes: (
 
 body {
   font-family: 'Public sans', sans-serif;
+
   .Roboto {
     font-family: 'Roboto', sans-serif !important;
   }
@@ -185,14 +205,17 @@ body {
 }
 
 @keyframes slideY {
+
   0%,
   50%,
   100% {
     transform: translateY(0px);
   }
+
   25% {
     transform: translateY(-10px);
   }
+
   75% {
     transform: translateY(10px);
   }
@@ -201,9 +224,11 @@ body {
 .opacity-50 {
   opacity: 0.5;
 }
+
 .link {
   color: rgb(var(--v-theme-lightText));
   text-decoration: none;
+
   &:hover {
     color: rgb(var(--v-theme-primary));
   }
