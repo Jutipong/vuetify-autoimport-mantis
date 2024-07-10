@@ -11,7 +11,6 @@
 import { createApp } from 'vue'
 // import '@/assets/css/styles/index.scss'
 // import '@/scss/style.scss';
-import '@/scss/style.scss'
 
 import type { PluginOptions } from 'vue-toastification'
 import Toast from 'vue-toastification'
@@ -24,6 +23,8 @@ import router from '@/@core/router'
 
 import 'vue-toastification/dist/index.css'
 import 'virtual:uno.css'
+
+import '@/scss/style.scss'
 
 document.title = import.meta.env.VITE_APP_TITLE
 
