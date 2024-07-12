@@ -7,6 +7,7 @@ import Layouts from 'vite-plugin-vue-layouts'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import UnoCSS from 'unocss/vite'
+import vuetify from 'vite-plugin-vuetify'
 import { typescriptConfig, vueConfig } from './src/constants/vite-config'
 
 export default defineConfig({
@@ -42,6 +43,7 @@ export default defineConfig({
         }),
         vue(),
         UnoCSS(),
+        vuetify({ autoImport: true }),
     ],
     resolve: {
         alias: {
@@ -54,13 +56,6 @@ export default defineConfig({
             '@types': fileURLToPath(new URL('./src/types', import.meta.url)),
         },
         extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
-    },
-    css: {
-        preprocessorOptions: {
-            scss: {
-                // './src/assets/styles/variables.scss': '@import
-            },
-        },
     },
     build: {
         chunkSizeWarningLimit: 1024 * 1024, // Set the limit to 1 MB
