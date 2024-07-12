@@ -8,10 +8,12 @@ import App from './App.vue'
 import vuetify from '@/@core/plugins/vuetify'
 import router from '@/@core/router'
 
-import '@/scss/style.scss'
+import './assets/scss/style.scss'
 
 import 'vue-toastification/dist/index.css'
 import 'virtual:uno.css'
+
+r
 
 document.title = import.meta.env.VITE_APP_TITLE
 

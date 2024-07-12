@@ -8,15 +8,6 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     DashboardAnalyticsReport: typeof import('./components/dashboard/AnalyticsReport.vue')['default']
-    DashboardComponentsAnalyticsReport: typeof import('./components/dashboard/components/AnalyticsReport.vue')['default']
-    DashboardComponentsHelpSupport: typeof import('./components/dashboard/components/HelpSupport.vue')['default']
-    DashboardComponentsIncomeOverview: typeof import('./components/dashboard/components/IncomeOverview.vue')['default']
-    DashboardComponentsRecentOrder: typeof import('./components/dashboard/components/RecentOrder.vue')['default']
-    DashboardComponentsSalesReport: typeof import('./components/dashboard/components/SalesReport.vue')['default']
-    DashboardComponentsTransactionHistory: typeof import('./components/dashboard/components/TransactionHistory.vue')['default']
-    DashboardComponentsUniqueVisitor: typeof import('./components/dashboard/components/UniqueVisitor.vue')['default']
-    DashboardComponentsWidgetFive: typeof import('./components/dashboard/components/WidgetFive.vue')['default']
-    DashboardDefaultDashboard: typeof import('./components/dashboard/DefaultDashboard.vue')['default']
     DashboardHelpSupport: typeof import('./components/dashboard/HelpSupport.vue')['default']
     DashboardIncomeOverview: typeof import('./components/dashboard/IncomeOverview.vue')['default']
     DashboardRecentOrder: typeof import('./components/dashboard/RecentOrder.vue')['default']

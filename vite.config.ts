@@ -57,7 +57,9 @@ export default defineConfig({
     },
     css: {
         preprocessorOptions: {
-            scss: {},
+            scss: {
+                // './src/assets/styles/variables.scss': '@import
+            },
         },
     },
     build: {
