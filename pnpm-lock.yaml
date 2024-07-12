@@ -53,10 +53,13 @@ importers:
     devDependencies:
       '@antfu/eslint-config':
         specifier: 2.21.3
-        version: 2.21.3(@vue/compiler-sfc@3.4.31)(eslint@9.6.0)(typescript@5.5.3)
+        version: 2.21.3(@unocss/eslint-plugin@0.61.3(eslint@9.6.0)(typescript@5.5.3))(@vue/compiler-sfc@3.4.31)(eslint@9.6.0)(typescript@5.5.3)
       '@types/node':
         specifier: 20.14.10
         version: 20.14.10
+      '@unocss/eslint-plugin':
+        specifier: ^0.61.3
+        version: 0.61.3(eslint@9.6.0)(typescript@5.5.3)
       '@vitejs/plugin-vue':
         specifier: ^5.0.5
         version: 5.0.5(vite@5.3.3(@types/node@20.14.10)(sass@1.77.8))(vue@3.4.31(typescript@5.5.3))
@@ -790,6 +793,10 @@ packages:
 
   '@unocss/core@0.61.3':
     resolution: {integrity: sha512-9vixY1i5E0DQFtHJz/pHyFlFsiXJgL1bKHuocbl+GUi09lY/gE9TRm2qr2JOJx/BF720tMv9VxYI8Zq3EyPOXA==}
+
+  '@unocss/eslint-plugin@0.61.3':
+    resolution: {integrity: sha512-Ss6xw5KDoccRDGC+BcZeB3ePAqgUJkf6idMOx/BG3cJATatk0Ydkr/o3KwEg7XDD5JIkACcTSz7YWRJ0z0s7YA==}
+    engines: {node: '>=14'}
 
   '@unocss/extractor-arbitrary-variants@0.61.3':
     resolution: {integrity: sha512-8yFAavi4PXTZTyJqsSQJuZNdaERMyLP4Gs4IzBDt8zjmUrXmYfgV+bKif2eE52QKvtb5/Jsij3fgfMsJouln7A==}
@@ -2851,7 +2858,7 @@ snapshots:
       '@ant-design/icons-svg': 4.4.2
       vue: 3.4.31(typescript@5.5.3)
 
-  '@antfu/eslint-config@2.21.3(@vue/compiler-sfc@3.4.31)(eslint@9.6.0)(typescript@5.5.3)':
+  '@antfu/eslint-config@2.21.3(@unocss/eslint-plugin@0.61.3(eslint@9.6.0)(typescript@5.5.3))(@vue/compiler-sfc@3.4.31)(eslint@9.6.0)(typescript@5.5.3)':
     dependencies:
       '@antfu/install-pkg': 0.3.3
       '@clack/prompts': 0.7.0
@@ -2889,6 +2896,8 @@ snapshots:
       vue-eslint-parser: 9.4.3(eslint@9.6.0)
       yaml-eslint-parser: 1.2.3
       yargs: 17.7.2
+    optionalDependencies:
+      '@unocss/eslint-plugin': 0.61.3(eslint@9.6.0)(typescript@5.5.3)
     transitivePeerDependencies:
       - '@vue/compiler-sfc'
       - supports-color
@@ -3574,6 +3583,18 @@ snapshots:
       unconfig: 0.3.13
 
   '@unocss/core@0.61.3': {}
+
+  '@unocss/eslint-plugin@0.61.3(eslint@9.6.0)(typescript@5.5.3)':
+    dependencies:
+      '@typescript-eslint/utils': 7.16.0(eslint@9.6.0)(typescript@5.5.3)
+      '@unocss/config': 0.61.3
+      '@unocss/core': 0.61.3
+      magic-string: 0.30.10
+      synckit: 0.9.0
+    transitivePeerDependencies:
+      - eslint
+      - supports-color
+      - typescript
 
   '@unocss/extractor-arbitrary-variants@0.61.3':
     dependencies:

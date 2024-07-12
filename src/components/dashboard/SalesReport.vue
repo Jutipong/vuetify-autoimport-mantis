@@ -163,7 +163,7 @@ const items = ref(['Today', 'This month', 'This year'])
 
 <template>
     <v-card class="title-card" variant="text" rounded="md">
-        <v-card-item class="pb-2 px-0 pt-0">
+        <v-card-item class="pt-0 pb-2 px-0">
             <div class="d-flex justify-space-between">
                 <v-card-title class="text-h5">
                     Sales Report

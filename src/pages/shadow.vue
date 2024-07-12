@@ -23,7 +23,7 @@ const colorShadow = ref(['primary', 'secondary', 'info', 'success', 'warning', '
             <UiParentCard title="Basic Shadow">
                 <v-row justify="center">
                     <v-col v-for="n in 25" :key="n" cols="auto">
-                        <v-card height="100" width="100" class="mb-5 d-flex justify-center align-center flex-column" :class="[`elevation-${n}`]">
+                        <v-card height="100" width="100" class="d-flex justify-center align-center mb-5 flex-column" :class="[`elevation-${n}`]">
                             <h6 class="text-h6">
                                 elevation
                             </h6>

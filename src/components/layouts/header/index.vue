@@ -7,13 +7,13 @@ const customizer = useCustomizerStore()
 <template>
     <v-app-bar elevation="0" height="60">
         <v-btn
-            class="hidden-md-and-down text-secondary mr-3" color="darkText" icon rounded="sm" variant="text"
+            class="text-secondary hidden-md-and-down mr-3" color="darkText" icon rounded="sm" variant="text"
             size="small" @click.stop="customizer.SET_MINI_SIDEBAR(!customizer.mini_sidebar)"
         >
             <MenuFoldOutlined :style="{ fontSize: '16px' }" />
         </v-btn>
         <v-btn
-            class="hidden-lg-and-up text-secondary ms-3" color="darkText" icon rounded="sm" variant="text"
+            class="text-secondary hidden-lg-and-up ms-3" color="darkText" icon rounded="sm" variant="text"
             size="small" @click.stop="customizer.SET_SIDEBAR_DRAWER"
         >
             <MenuFoldOutlined :style="{ fontSize: '16px' }" />
@@ -29,8 +29,8 @@ const customizer = useCustomizerStore()
                     <SearchOutlined :style="{ fontSize: '17px' }" />
                 </v-btn>
             </template>
-            <v-sheet class="search-sheet v-col-12 pa-0" width="320">
-                <v-text-field persistent-placeholder placeholder="Search here.." color="primary" variant="solo" hide-details>
+            <v-sheet class="pa-0 search-sheet v-col-12" width="320">
+                <v-text-field placeholder="Search here.." color="primary" variant="solo" hide-details persistent-placeholder>
                     <template #prepend-inner>
                         <SearchOutlined :style="{ fontSize: '17px' }" />
                     </template>
@@ -74,7 +74,7 @@ const customizer = useCustomizerStore()
                         <v-avatar class="mr-sm-2 mr-0 py-2">
                             <img src="@/assets/images/users/avatar-1.png" alt="Julia">
                         </v-avatar>
-                        <h6 class="text-subtitle-1 mb-0 d-sm-block d-none">
+                        <h6 class="text-subtitle-1 mb-0 d-none d-sm-block">
                             JWT User
                         </h6>
                     </div>

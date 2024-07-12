@@ -8,7 +8,7 @@ const props = defineProps({
 <template>
     <v-card variant="outlined" elevation="0" class="withbg">
         <v-card-item>
-            <div class="d-sm-flex align-center justify-space-between">
+            <div class="align-center justify-space-between d-sm-flex">
                 <v-card-title class="text-h6" style="line-height: 1.57">
                     {{ props.title }}
                 </v-card-title>

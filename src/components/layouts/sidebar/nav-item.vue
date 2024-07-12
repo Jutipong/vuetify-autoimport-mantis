@@ -36,7 +36,7 @@ const props = defineProps({
             <v-chip
                 label
                 :color="item.chipColor"
-                class="sidebarchip hide-menu"
+                class="hide-menu sidebarchip"
                 size="small"
                 :prepend-icon="item.chipIcon"
             >

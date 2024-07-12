@@ -15,7 +15,7 @@ function deactivateItem() {
     <!-- ---------------------------------------------- -->
     <v-menu :close-on-content-click="false" offset="6, 0">
         <template #activator="{ props }">
-            <v-btn icon class="text-secondary ml-sm-2 ml-1" color="darkText" rounded="sm" size="small" v-bind="props">
+            <v-btn icon class="text-secondary ml-1 ml-sm-2" color="darkText" rounded="sm" size="small" v-bind="props">
                 <v-badge :content="isActive ? '2' : '0'" color="primary" offset-x="-4" offset-y="-5">
                     <BellOutlined :style="{ fontSize: '16px' }" />
                 </v-badge>
@@ -59,7 +59,7 @@ function deactivateItem() {
                             <span class="text-caption">3:00 AM</span>
                         </div>
 
-                        <p class="text-caption text-medium-emphasis my-0">
+                        <p class="text-caption my-0 text-medium-emphasis">
                             2 min ago
                         </p>
                     </v-list-item>
@@ -120,7 +120,7 @@ function deactivateItem() {
                 </v-list>
             </perfect-scrollbar>
             <v-divider />
-            <div class="pa-2 text-center">
+            <div class="text-center pa-2">
                 <v-btn color="primary" variant="text">
                     View All
                 </v-btn>

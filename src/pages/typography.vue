@@ -37,12 +37,12 @@ const breadcrumbs = ref([
                         </h1>
                         <v-breadcrumbs :items="['Size: 38px', 'Weight: Bold', 'Line Height: 46px']" class="text-h6 text-lightText pa-0" />
                         <v-divider />
-                        <h2 class="text-h2 mb-2 mt-3">
+                        <h2 class="mb-2 text-h2 mt-3">
                             H2 Heading
                         </h2>
                         <v-breadcrumbs :items="['Size: 30px', 'Weight: Bold', 'Line Height: 38px']" class="text-h6 text-lightText pa-0" />
                         <v-divider />
-                        <h3 class="text-h3 mb-2 mt-3">
+                        <h3 class="mb-2 mt-3 text-h3">
                             H3 Heading
                         </h3>
                         <v-breadcrumbs
@@ -50,7 +50,7 @@ const breadcrumbs = ref([
                             class="text-h6 text-lightText pa-0"
                         />
                         <v-divider />
-                        <h4 class="text-h4 mb-2 mt-3">
+                        <h4 class="mb-2 mt-3 text-h4">
                             H4 Heading
                         </h4>
                         <v-breadcrumbs :items="['Size: 20px', 'Weight: Bold', 'Line Height: 28px']" class="text-h6 text-lightText pa-0" />
@@ -133,7 +133,7 @@ const breadcrumbs = ref([
             <v-row>
                 <v-col cols="12">
                     <UiParentCard title="Alignment">
-                        <p class="text-left text-caption">
+                        <p class="text-caption text-left">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
@@ -141,7 +141,7 @@ const breadcrumbs = ref([
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
-                        <p class="text-right mb-0 text-caption">
+                        <p class="mb-0 text-caption text-right">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
@@ -163,7 +163,7 @@ const breadcrumbs = ref([
                 </v-col>
                 <v-col cols="12">
                     <UiParentCard title="Overline">
-                        <div class="text-overline text-uppercase mb-3">
+                        <div class="mb-3 text-overline text-uppercase">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </div>
                         <v-breadcrumbs
@@ -174,7 +174,7 @@ const breadcrumbs = ref([
                 </v-col>
                 <v-col cols="12">
                     <UiParentCard title="Link">
-                        <a href="/utils/typography" class="link-hover text-primary d-inline-block mb-3">mantisdashboard.io</a>
+                        <a href="/utils/typography" class="mb-3 link-hover text-primary d-inline-block">mantisdashboard.io</a>
                         <v-breadcrumbs
                             :items="['Size: 12px', 'Weight: Regular', 'Line Height: 20px']"
                             class="text-h6 text-lightText mb-0 pa-0"

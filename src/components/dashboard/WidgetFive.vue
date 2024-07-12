@@ -43,7 +43,7 @@ const fivecards = shallowRef([
             <v-card elevation="0">
                 <v-card variant="outlined">
                     <v-card-text>
-                        <div class="d-flex align-items-center justify-space-between">
+                        <div class="d-flex justify-space-between align-items-center">
                             <div>
                                 <h6 class="text-h6 text-lightText mb-1">
                                     {{ card5.name }}

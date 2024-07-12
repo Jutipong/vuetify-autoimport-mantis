@@ -28,7 +28,7 @@ async function logIn() {
 </script>
 
 <template>
-    <div fluid class="flex h-full items-center justify-center">
+    <div fluid class="justify-center flex h-full items-center">
         <v-row>
             <v-col>
                 <v-card

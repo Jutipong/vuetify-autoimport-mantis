@@ -2,8 +2,8 @@ import antfu from '@antfu/eslint-config'
 
 export default antfu(
     {
-        stylistic: { 
-            indent: 4
+        stylistic: {
+            indent: 4,
         },
         typescript: true,
         vue: true,

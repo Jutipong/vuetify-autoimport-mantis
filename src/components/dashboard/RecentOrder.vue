@@ -80,7 +80,7 @@ const projects = shallowRef([
         <v-table class="bordered-table" hover density="comfortable">
             <thead class="bg-containerBg">
                 <tr>
-                    <th class="text-left text-caption font-weight-bold text-uppercase">
+                    <th class="text-left text-caption text-uppercase font-weight-bold">
                         Tracking no.
                     </th>
                     <th class="text-left text-caption font-weight-bold text-uppercase">
