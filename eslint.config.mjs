@@ -20,7 +20,7 @@ export default antfu(
                 shallowOnly: true,
             }],
             'vue/prop-name-casing': ['off'],
-            'no-template-shadow': ['off'],
+            'vue/no-template-shadow': ['off'],
         },
         jsonc: false,
         yaml: false,

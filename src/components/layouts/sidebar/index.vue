@@ -14,21 +14,21 @@ const sidebarMenu = shallowRef(sidebarItems)
             <LayoutsLogo />
         </div>
         <!-- ---------------------------------------------- -->
-        <!---Navigation -->
+        <!-- Navigation -->
         <!-- ---------------------------------------------- -->
         <perfect-scrollbar class="scrollnavbar">
             <v-list aria-busy="true" aria-label="menu list">
-                <!---Menu Loop -->
+                <!--- Menu Loop -->
                 <template v-for="(item, i) in sidebarMenu" :key="i">
-                    <!---Item Sub Header -->
+                    <!--- Item Sub Header -->
                     <LayoutsSidebarNavGroup v-if="item.header" :key="item.title" :item="item" />
-                    <!---Item Divider -->
+                    <!--- Item Divider -->
                     <v-divider v-else-if="item.divider" class="my-3" />
-                    <!---If Has Child -->
+                    <!--- If Has Child -->
                     <LayoutsSidebarNavCollapse v-else-if="item.children" class="leftPadding" :item="item" :level="0" />
-                    <!---Single Item -->
+                    <!--- Single Item -->
                     <LayoutsSidebarNavItem v-else :item="item" />
-                    <!---End Single Item -->
+                    <!--- End Single Item -->
                 </template>
             </v-list>
         </perfect-scrollbar>

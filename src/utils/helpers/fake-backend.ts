@@ -1,71 +1,74 @@
-export { fakeBackend };
+/* eslint-disable ts/no-use-before-define */
+export { fakeBackend }
 
 function fakeBackend() {
-  const users = [{ id: 1, username: 'info@codedthemes.com', password: 'admin123', firstName: 'Codedthemes', lastName: '.com' }];
-  const realFetch = window.fetch;
-  /* eslint-disable @typescript-eslint/no-explicit-any */
-  window.fetch = function (url: any, opts: any) {
-    return new Promise((resolve: any, reject) => {
-      // wrap in timeout to simulate server api call
-      setTimeout(handleRoute, 500);
+    const users = [{ id: 1, username: 'info@codedthemes.com', password: 'admin123', firstName: 'Codedthemes', lastName: '.com' }]
+    const realFetch = window.fetch
 
-      function handleRoute() {
-        switch (true) {
-          case url.endsWith('/users/authenticate') && opts.method === 'POST':
-            return authenticate();
-          case url.endsWith('/users') && opts.method === 'GET':
-            return getUsers();
-          default:
-            // pass through any requests not handled above
-            return realFetch(url, opts)
-              .then((response) => resolve(response))
-              .catch((error) => reject(error));
-        }
-      }
+    window.fetch = function (url: any, opts: any) {
+        return new Promise((resolve: any, reject) => {
+            // wrap in timeout to simulate server api call
+            setTimeout(handleRoute, 500)
 
-      // route functions
+            function handleRoute() {
+                switch (true) {
+                    case url.endsWith('/users/authenticate') && opts.method === 'POST':
+                        return authenticate()
+                    case url.endsWith('/users') && opts.method === 'GET':
+                        return getUsers()
+                    default:
+                        // pass through any requests not handled above
+                        return realFetch(url, opts)
+                            .then(response => resolve(response))
+                            .catch(error => reject(error))
+                }
+            }
 
-      function authenticate() {
-        const { username, password } = body();
-        const user: any = users.find((x) => x.username === username && x.password === password);
+            // route functions
 
-        if (!user) return error('Username or password is incorrect');
+            function authenticate() {
+                const { username, password } = body()
+                const user: any = users.find(x => x.username === username && x.password === password)
 
-        return ok({
-          id: user.id,
-          username: user.username,
-          firstName: user.firstName,
-          lastName: user.lastName,
-          token: 'fake-jwt-token'
-        });
-      }
+                if (!user)
+                    return error('Username or password is incorrect')
 
-      function getUsers() {
-        if (!isAuthenticated()) return unauthorized();
-        return ok(users);
-      }
+                return ok({
+                    id: user.id,
+                    username: user.username,
+                    firstName: user.firstName,
+                    lastName: user.lastName,
+                    token: 'fake-jwt-token',
+                })
+            }
 
-      // helper functions
+            function getUsers() {
+                if (!isAuthenticated())
+                    return unauthorized()
+                return ok(users)
+            }
 
-      function ok(body: any) {
-        resolve({ ok: true, text: () => Promise.resolve(JSON.stringify(body)) });
-      }
+            // helper functions
 
-      function unauthorized() {
-        resolve({ status: 401, text: () => Promise.resolve(JSON.stringify({ message: 'Unauthorized' })) });
-      }
+            function ok(body: any) {
+                resolve({ ok: true, text: () => Promise.resolve(JSON.stringify(body)) })
+            }
 
-      function error(message: string) {
-        resolve({ status: 400, text: () => Promise.resolve(JSON.stringify({ message })) });
-      }
+            function unauthorized() {
+                resolve({ status: 401, text: () => Promise.resolve(JSON.stringify({ message: 'Unauthorized' })) })
+            }
 
-      function isAuthenticated() {
-        return opts.headers['Authorization'] === 'Bearer fake-jwt-token';
-      }
+            function error(message: string) {
+                resolve({ status: 400, text: () => Promise.resolve(JSON.stringify({ message })) })
+            }
 
-      function body() {
-        return opts.body && JSON.parse(opts.body);
-      }
-    });
-  };
+            function isAuthenticated() {
+                return opts.headers.Authorization === 'Bearer fake-jwt-token'
+            }
+
+            function body() {
+                return opts.body && JSON.parse(opts.body)
+            }
+        })
+    }
 }

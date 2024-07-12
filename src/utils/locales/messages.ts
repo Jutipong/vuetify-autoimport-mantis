@@ -1,7 +1,7 @@
-import en from './en.json';
+import en from './en.json'
 
 const messages = {
-  en: en
-};
+    en,
+}
 
-export default messages;
+export default messages

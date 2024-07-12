@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { GithubOutlined, MenuFoldOutlined, SearchOutlined } from '@ant-design/icons-vue'
+import { MenuFoldOutlined, SearchOutlined } from '@ant-design/icons-vue'
 
 const customizer = useCustomizerStore()
 </script>
@@ -45,11 +45,8 @@ const customizer = useCustomizerStore()
             <!-- <Searchbar /> -->
         </v-sheet>
 
-        <!---/Search part -->
-
         <v-spacer />
         <!-- ---------------------------------------------- -->
-        <!---right part -->
         <!-- ---------------------------------------------- -->
 
         <!-- ---------------------------------------------- -->

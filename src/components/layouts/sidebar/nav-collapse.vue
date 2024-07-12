@@ -12,30 +12,30 @@ const props = defineProps({
 
 <template>
     <!-- ---------------------------------------------- -->
-    <!---Item Childern -->
+    <!--- Item Children -->
     <!-- ---------------------------------------------- -->
     <v-list-group no-action>
         <!-- ---------------------------------------------- -->
-        <!---Dropdown  -->
+        <!--- Dropdown  -->
         <!-- ---------------------------------------------- -->
         <template #activator="{ props }">
             <v-list-item v-bind="props" :value="item?.title" rounded class="mb-1" color="primary">
-                <!---Icon  -->
+                <!--- Icon  -->
                 <template #prepend>
                     <component :is="item?.icon" class="iconClass" :level="level" />
                 </template>
-                <!---Title  -->
+                <!--- Title  -->
                 <v-list-item-title class="mr-auto">
                     {{ item?.title }}
                 </v-list-item-title>
-                <!---If Caption -->
+                <!--- If Caption -->
                 <v-list-item-subtitle v-if="item?.subCaption" class="text-caption mt-n1 hide-menu">
-                   {{ item?.subCaption }}
+                    {{ item?.subCaption }}
                 </v-list-item-subtitle>
             </v-list-item>
         </template>
         <!-- ---------------------------------------------- -->
-        <!---Sub Item -->
+        <!--- Sub Item -->
         <!-- ---------------------------------------------- -->
         <template v-for="(subitem, i) in item?.children" :key="i">
             <LayoutsSidebarNavCollapse v-if="subitem.children" :item="subitem" :level="(props?.level ?? 0) + 1" />
@@ -44,6 +44,6 @@ const props = defineProps({
     </v-list-group>
 
     <!-- ---------------------------------------------- -->
-    <!---End Item Sub Header -->
+    <!--- End Item Sub Header -->
     <!-- ---------------------------------------------- -->
 </template>

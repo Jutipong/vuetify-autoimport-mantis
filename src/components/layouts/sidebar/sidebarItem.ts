@@ -3,12 +3,8 @@ import {
     BarcodeOutlined,
     BgColorsOutlined,
     ChromeOutlined,
-    CrownOutlined,
     DashboardOutlined,
     FontSizeOutlined,
-    LoginOutlined,
-    ProfileOutlined,
-    QuestionOutlined,
 } from '@ant-design/icons-vue'
 
 const sidebarItem: Menu[] = [

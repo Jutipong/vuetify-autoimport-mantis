@@ -37,9 +37,7 @@ function alertError() {
 <template>
     <v-container>
         <v-card>
-            <v-card-text>
-                
-            </v-card-text>
+            <v-card-text />
             <v-card-actions justify-end>
                 <v-btn color="primary" @click="alertInfo">
                     alert info
