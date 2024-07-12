@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "x": "rm -f ./src/auto-imports.d.ts && rm -f ./src/components.d.ts && rm -f ./src/typed-router.d.ts && vite"
+    "x": "rm -f ./src/auto-imports.d.ts && rm -f ./src/components.d.ts && rm -f typed-router.d.ts && vite"
   },
   "dependencies": {
     "@ant-design/icons-vue": "7.0.1",
@@ -33,7 +33,7 @@
     "@unocss/eslint-plugin": "^0.61.3",
     "@vitejs/plugin-vue": "^5.0.5",
     "sass": "^1.77.8",
-    "typescript": "^5.5.3",
+    "typescript": "^5.4.5",
     "unplugin-auto-import": "^0.17.8",
     "unplugin-vue-components": "^0.27.2",
     "unplugin-vue-router": "^0.10.0",

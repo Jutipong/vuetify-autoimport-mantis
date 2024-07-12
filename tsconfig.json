@@ -1,61 +1,11 @@
 {
-    "compilerOptions": {
-        "target": "ESNext",
-        "jsx": "preserve",
-        "lib": [
-            "ESNext",
-            "DOM"
-        ],
-        "useDefineForClassFields": true,
-        "baseUrl": ".",
-        "module": "ESNext",
-        "moduleResolution": "Bundler",
-        "paths": {
-            "@/*": [
-                "src/*",
-            ],
-            "@assets/*": [
-                "src/assets/*"
-            ],
-            "@images/*": [
-                "src/assets/images/*"
-            ],
-            "@components/*": [
-                "src/components/*"
-            ],
-            "@types/*": [
-                "src/types/*"
-            ],
-            "@core/*": [
-                "src/@core/*"
-            ],
-            "@utils/*": [
-                "src/utils/*"
-            ],
-        },
-        "resolveJsonModule": true,
-        "types": [
-            "vite/client",
-            "vite-plugin-vue-layouts/client",
-            "unplugin-vue-router/client"
-        ],
-        "strict": true,
-        "noEmit": true,
-        "esModuleInterop": true,
-        "isolatedModules": true,
-        "skipLibCheck": true
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
     },
-    "references": [
-        {
-            "path": "./tsconfig.node.json"
-        }
-    ],
-    "include": [
-        "src/**/*.ts",
-        "src/**/*.d.ts",
-        "src/**/*.vue",
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router/auto'
 import { setupLayouts } from 'virtual:generated-layouts'
-import { routes } from 'vue-router/auto-routes'
+import { handleHotUpdate, routes } from 'vue-router/auto-routes'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,7 +8,11 @@ const router = createRouter({
     scrollBehavior() { return { top: 0 } },
 })
 
-router.beforeEach((to: any, from: any, next: any) => {
+if (import.meta.hot) {
+    handleHotUpdate(router)
+}
+
+router.beforeEach((to: any, _: any, next: any) => {
     const { token, clearAuth } = useAuthStore()
     const appStore = useAppStore()
 

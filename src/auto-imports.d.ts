@@ -7,7 +7,6 @@ export {}
 declare global {
   const Awaited: typeof import('typescript')['Awaited']
   const Capitalize: typeof import('typescript')['Capitalize']
-  const Comingsoon1: typeof import('./views/pages/maintenance/comingsoon/Comingsoon1.vue')['default']
   const ConstructorParameters: typeof import('typescript')['ConstructorParameters']
   const DefaultTheme: typeof import('./@core/plugins/DefaultTheme')['DefaultTheme']
   const Exclude: typeof import('typescript')['Exclude']
@@ -34,7 +33,6 @@ declare global {
   const alert: typeof import('./utils/alert')['default']
   const api: typeof import('./utils/api')['default']
   const computed: typeof import('vue')['computed']
-  const config: typeof import('./config')['default']
   const confirm: typeof import('./utils/confirm')['default']
   const dateFormat: typeof import('./utils/dateTime')['dateFormat']
   const defineEmits: typeof import('vue')['defineEmits']

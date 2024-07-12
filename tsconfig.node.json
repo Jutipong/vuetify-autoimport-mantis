@@ -1,12 +1,15 @@
 {
-    "compilerOptions": {
-        "composite": true,
-        "module": "ESNext",
-        "moduleResolution": "Node",
-        "allowSyntheticDefaultImports": true
-    },
-    "include": [
-        "/src/constants/vite.config.ts",
-        "src/typed-router.d.ts"
-    ]
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noEmit": true
+  },
+  "include": [
+    "src/constants/vite-config.ts",
+  ]
 }
