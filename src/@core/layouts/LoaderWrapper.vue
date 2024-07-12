@@ -5,10 +5,8 @@ const { isLoading } = storeToRefs(uiStore)
 
 <template>
     <div
-        class="page-loader" :class="{
-            loading: isLoading,
-            hidden: !isLoading,
-        }"
+        class="page-loader"
+        :class="{ loading: isLoading, hidden: !isLoading }"
     >
         <div class="bar" />
     </div>
