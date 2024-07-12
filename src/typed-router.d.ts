@@ -21,10 +21,13 @@ declare module 'vue-router/auto-routes' {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
     '/[...path]': RouteRecordInfo<'/[...path]', '/:path(.*)', { path: ParamValue<true> }, { path: ParamValue<false> }>,
     '/colors': RouteRecordInfo<'/colors', '/colors', Record<never, never>, Record<never, never>>,
+    '/customer': RouteRecordInfo<'/customer', '/customer', Record<never, never>, Record<never, never>>,
     '/dashboard': RouteRecordInfo<'/dashboard', '/dashboard', Record<never, never>, Record<never, never>>,
     '/login': RouteRecordInfo<'/login', '/login', Record<never, never>, Record<never, never>>,
+    '/product': RouteRecordInfo<'/product', '/product', Record<never, never>, Record<never, never>>,
     '/sample-page': RouteRecordInfo<'/sample-page', '/sample-page', Record<never, never>, Record<never, never>>,
     '/shadow': RouteRecordInfo<'/shadow', '/shadow', Record<never, never>, Record<never, never>>,
     '/typography': RouteRecordInfo<'/typography', '/typography', Record<never, never>, Record<never, never>>,
+    '/validate': RouteRecordInfo<'/validate', '/validate', Record<never, never>, Record<never, never>>,
   }
 }

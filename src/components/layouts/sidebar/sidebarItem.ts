@@ -5,9 +5,16 @@ import {
     ChromeOutlined,
     DashboardOutlined,
     FontSizeOutlined,
+    ProjectOutlined,
 } from '@ant-design/icons-vue'
 
 const sidebarItem: Menu[] = [
+    { header: 'Example' },
+    {
+        title: 'Product',
+        icon: ProjectOutlined,
+        to: '/product',
+    },
     { header: 'Navigation' },
     {
         title: 'Dashboard',

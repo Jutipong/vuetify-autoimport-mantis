@@ -7,6 +7,11 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    CustomerActionModal01: typeof import('./components/customer/action-modal-01.vue')['default']
+    CustomerActionModal02: typeof import('./components/customer/action-modal-02.vue')['default']
+    CustomerActionModal03: typeof import('./components/customer/action-modal-03.vue')['default']
+    CustomerActionModal04: typeof import('./components/customer/action-modal-04.vue')['default']
+    CustomerInquiry: typeof import('./components/customer/Inquiry.vue')['default']
     DashboardAnalyticsReport: typeof import('./components/dashboard/AnalyticsReport.vue')['default']
     DashboardHelpSupport: typeof import('./components/dashboard/HelpSupport.vue')['default']
     DashboardIncomeOverview: typeof import('./components/dashboard/IncomeOverview.vue')['default']
@@ -24,11 +29,20 @@ declare module 'vue' {
     LayoutsSidebarNavCollapse: typeof import('./components/layouts/sidebar/nav-collapse.vue')['default']
     LayoutsSidebarNavGroup: typeof import('./components/layouts/sidebar/nav-group.vue')['default']
     LayoutsSidebarNavItem: typeof import('./components/layouts/sidebar/nav-item.vue')['default']
+    ProductFilterForm: typeof import('./components/product/filter-form.vue')['default']
+    ProductModal: typeof import('./components/product/modal.vue')['default']
+    ProductTable: typeof import('./components/product/table.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SharedBaseBreadcrumb: typeof import('./components/shared/BaseBreadcrumb.vue')['default']
     SharedComponentTitle: typeof import('./components/shared/ComponentTitle.vue')['default']
     SharedUiParentCard: typeof import('./components/shared/UiParentCard.vue')['default']
     SharedUiTitleCard: typeof import('./components/shared/UiTitleCard.vue')['default']
+    ValidateForm: typeof import('./components/validate/form.vue')['default']
+    VConfirm: typeof import('./components/@v/confirm.vue')['default']
+    VCountdown: typeof import('./components/@v/countdown.vue')['default']
+    VCurrency: typeof import('./components/@v/currency.vue')['default']
+    VDate: typeof import('./components/@v/date.vue')['default']
+    VValert: typeof import('./components/@v/valert.vue')['default']
   }
 }
