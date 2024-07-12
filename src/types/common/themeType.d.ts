@@ -1,4 +1,4 @@
-export interface ThemeTypes {
+interface ThemeTypes {
     name: string
     dark: boolean
     variables?: object

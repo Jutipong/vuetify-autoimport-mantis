@@ -1,5 +1,3 @@
-import type { ThemeTypes } from '../../types/themeTypes/ThemeType'
-
 const DefaultTheme: ThemeTypes = {
     name: 'DefaultTheme',
     dark: false,
