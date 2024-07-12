@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "x": "rm -f ./src/auto-imports.d.ts && rm -f ./src/components.d.ts && rm -f typed-router.d.ts && vite"
+    "x": "rm -f ./src/auto-imports.d.ts && rm -f ./src/components.d.ts && rm -f ./src/typed-router.d.ts && vite"
   },
   "dependencies": {
     "@ant-design/icons-vue": "7.0.1",

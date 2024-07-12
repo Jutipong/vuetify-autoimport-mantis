@@ -39,9 +39,9 @@ export default defineConfig({
         }),
         VueRouter({
             routesFolder: 'src/pages',
-            dts: 'typed-router.d.ts',
+            dts: 'src/typed-router.d.ts',
         }),
-        vue( {
+        vue({
             include: [/\.vue$/, /\.md$/],
         }),
         UnoCSS(),
