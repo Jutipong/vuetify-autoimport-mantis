@@ -5,6 +5,11 @@ import * as directives from 'vuetify/directives'
 import * as labsComponents from 'vuetify/labs/components'
 import { DefaultTheme } from '@/@core/plugins/DefaultTheme'
 
+const vBtn = {
+    density: 'comfortable',
+    variant: 'flat',
+}
+
 export default createVuetify({
     components: { ...components, ...labsComponents },
     directives,
@@ -15,17 +20,15 @@ export default createVuetify({
         },
     },
     defaults: {
-        VBtn: {},
         VCard: {
             variant: 'outlined',
             rounded: 'md',
+
+            // card actions
+            VCardActions: {
+                VBtn: vBtn,
+            },
         },
-        VTextField: {
-            rounded: 'lg',
-        },
-        VTooltip: {
-            // set v-tooltip default location to top
-            location: 'top',
-        },
+        VBtn: vBtn,
     },
 })
