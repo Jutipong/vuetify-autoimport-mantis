@@ -9,7 +9,7 @@
         "useDefineForClassFields": true,
         "baseUrl": ".",
         "module": "ESNext",
-        "moduleResolution": "Bundler", // "Node",
+        "moduleResolution": "Bundler",
         "paths": {
             "@/*": [
                 "src/*",
@@ -53,7 +53,6 @@
     "include": [
         "src/**/*.ts",
         "src/**/*.d.ts",
-        "src/**/*.tsx",
         "src/**/*.vue",
     ],
     "exclude": [

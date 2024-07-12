@@ -1,5 +1,18 @@
 import { defineStore } from 'pinia'
-import config from '../config'
+
+export interface ConfigProps {
+    Sidebar_drawer: boolean
+    mini_sidebar: boolean
+    actTheme: string
+    fontTheme: string
+}
+
+const config: ConfigProps = {
+    Sidebar_drawer: true,
+    mini_sidebar: false,
+    actTheme: 'DefaultTheme',
+    fontTheme: 'Public sans',
+}
 
 export const useCustomizerStore = defineStore({
     id: 'customizer',
