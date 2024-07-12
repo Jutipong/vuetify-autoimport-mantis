@@ -1,13 +1,13 @@
 // ===============================|| Blank Layout ||=============================== //
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import LoaderWrapper from './LoaderWrapper.vue'
+import Loader from './loader.vue'
 </script>
 
 <template>
     <v-app>
         <!-- Loader start -->
-        <LoaderWrapper />
+        <Loader />
         <!-- Loader end -->
         <RouterView />
     </v-app>

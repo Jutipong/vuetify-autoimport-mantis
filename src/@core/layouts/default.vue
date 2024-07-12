@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import LoaderWrapper from './LoaderWrapper.vue'
+import Loader from './loader.vue'
 </script>
 
 <template>
@@ -12,7 +12,7 @@ import LoaderWrapper from './LoaderWrapper.vue'
                 <v-container>
                     <div>
                         <!-- Loader start -->
-                        <LoaderWrapper />
+                        <Loader />
                         <!-- Loader end -->
                         <RouterView />
                     </div>
