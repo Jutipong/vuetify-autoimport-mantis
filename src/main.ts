@@ -13,8 +13,6 @@ import './assets/scss/style.scss'
 import 'vue-toastification/dist/index.css'
 import 'virtual:uno.css'
 
-r
-
 document.title = import.meta.env.VITE_APP_TITLE
 
 const app = createApp(App)
