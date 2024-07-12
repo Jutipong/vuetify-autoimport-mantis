@@ -2,13 +2,8 @@ import antfu from '@antfu/eslint-config'
 
 export default antfu(
     {
-        stylistic: {
-            indent: 4,
-            overrides: {
-                // 'no-console': 'off',
-                // 'vue/no-console': 'off',
-                'eslint-comments/no-unlimited-disable': 'off',
-            },
+        stylistic: { 
+            indent: 4
         },
         typescript: true,
         vue: true,
@@ -22,6 +17,7 @@ export default antfu(
             'vue/prop-name-casing': ['off'],
             'vue/no-template-shadow': ['off'],
         },
+        unocss: true,
         jsonc: false,
         yaml: false,
         ignores: [
