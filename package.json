@@ -33,7 +33,7 @@
     "@unocss/eslint-plugin": "^0.61.3",
     "@vitejs/plugin-vue": "^5.0.5",
     "sass": "^1.77.8",
-    "typescript": "^5.4.5",
+    "typescript": "5.4.5",
     "unplugin-auto-import": "^0.17.8",
     "unplugin-vue-components": "^0.27.2",
     "unplugin-vue-router": "^0.10.0",
